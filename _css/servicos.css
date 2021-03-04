@@ -1,0 +1,55 @@
+/*====================================================================================*/
+/*                                  SERVIÇOS                                          */
+.cards-conteiner{          
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: auto;    
+}
+
+figure.card-item{
+    width: 32%;
+    height: auto;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #fff;    
+}
+figure.card-item:hover{
+    box-shadow: 3px 3px 20px #969696; 
+}
+
+.titulo{
+    font-size: 1.5em;
+}
+
+figcaption {
+    text-align: center;
+}
+
+figcaption p{
+    color: #000000;
+}
+
+figcaption a{
+    text-decoration: none;
+    color: #ff0000;
+}
+
+/*====================================================================================*/
+/*                          MEDIA QUERIE                                              */
+@media only screen and (max-width: 1000px){
+    figure.card-item{
+        width: 49%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .cards-conteiner{
+        flex-direction: column;
+    }
+    figure.card-item{
+        width: 100%;
+    }
+}

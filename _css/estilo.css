@@ -14,22 +14,46 @@ p{
     color: #fff;
 }
 
+
 /*====================================================================================*/
-/*                                                                                    */
+/*              GERAL                                                                 */
 .conteiner{
-    width: 70%;
+    width: 75%;
     margin: auto;
 }
 
 .banner{
-    height: 200px;
+    height: 100%;
     width: 100%;
-    background-color: #969696;
-    margin-bottom: 20px;
+    background-color: #000000;
+    margin-bottom: 20px; 
+}
+.img-responsive{    
+    max-width: 100%;
+    height: auto;   
 }
 
-.sessao-principal{
-    padding: 10px 10px 5px;
+footer{
+    height: 300px;
+    width: 100%;
+    background-color: #000000;/*#969696;*/
+    margin-top: 20px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sessao-principal-quem-somos, .sessao-principal-servicos, .sessao-principal-contato{
+    border-radius: 30px;
+    padding: 20px;
+    background-color: #363636;      
+}
+
+/*====================================================================================*/
+/*                                    INDEX                                           */
+.sessao-principal-index{
+    border-radius: 30px;
+    padding: 20px 20px 10px;
     background-color: #363636;        
     display: flex;
     flex-wrap: wrap;
@@ -40,25 +64,15 @@ article{
     width: 24%;
     height: auto;
     background-color: #fff;
-    margin-bottom: 5px;
-    padding: 5px;
-}
-
-footer{
-    height: 200px;
-    width: 100%;
-    background-color: #969696;
-    margin-top: 20px;
-    padding-top: 50px;
-    display: flex;
-    justify-content: space-around;
+    margin-bottom: 10px;
+    padding: 10px;
 }
 
 /*====================================================================================*/
 /*                          MEDIA QUERIE                                              */
 @media only screen and (max-width: 1000px){
     .conteiner{
-        width: 80%;
+        width: 90%;
     }
     article{
         width: 49%;
