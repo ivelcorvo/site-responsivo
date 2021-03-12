@@ -1,88 +1,104 @@
 <!DOCTYPE html>
-<hmtl lang='pt-br'>
+<hmtl lang="pt-br">
     <head>
-        <meta charset='utf-8'>
-        <meta name='author' content='levi'>
-        <meta name='description' content='teste'>
-        <meta name='robots' content='index, nofollow'>
-        <meta name='viewport' content='width=device-width, initial scale=1.0'>
-        <meta http-equiv='X-UA-Compatible' content='ei=edge'>
+        <meta charset="utf-8">
+        <meta name="author" content="levi">
+        <meta name="description" content="teste">
+        <meta name="robots" content="index, nofollow">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ei=edge">
         <title> teste </title>
-        <link rel='stylesheet' type='text/css' href='_css/estilo.css'>
-        <link rel='stylesheet' type='text/css' href='_css/menu.css'>
-        <link rel='stylesheet' type='text/css' href='_css/servicos.css'>
+        <link rel="stylesheet" type="text/css" href="_css/estilo.css">
+        <link rel="stylesheet" type="text/css" href="_css/menu.css">
+        <link rel="stylesheet" type="text/css" href="_css/servicos.css">
     </head>
     <body>
         <header>
             <nav>
-                <div class='menu-wrapper'>
+                <div class="menu-wrapper">
                     <!-- menu desktop -->
-                    <ul class='menu-desktop'>
-                        <li><a href='index.html'>HOME</a></li>
-                        <li><a href='servicos.html'>SERVIÇOS</a></li>
-                        <li><a href='quem-somos.html'>QUEM SOMOS</a></li>
-                        <li><a href='contato.html'>CONTATO</a></li>
+                    <ul class="menu-desktop">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="servicos.html">SERVIÇOS</a></li>
+                        <li><a href="quem-somos.html">QUEM SOMOS</a></li>
+                        <li><a href="contato.html">CONTATO</a></li>
                     </ul>
                     <!-- menu aparelhos moveis-->
-                    <label class='lbl-menu' for='check'>&#8801;</label>
-                    <input type='checkbox' id='check'>    
-                    <ul class='menu-movel'>
-                        <li><a href='index.html'>HOME</a></li>
-                        <li><a href='servicos.html'>SERVIÇOS</a></li>
-                        <li><a href='quem-somos.html'>QUEM SOMOS</a></li>
-                        <li><a href='contato.html'>CONTATO</a></li>
+                    <label class="lbl-menu" for="check">&#8801;</label>
+                    <input type="checkbox" id="check">    
+                    <ul class="menu-movel">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="servicos.html">SERVIÇOS</a></li>
+                        <li><a href="quem-somos.html">QUEM SOMOS</a></li>
+                        <li><a href="contato.html">CONTATO</a></li>
                     </ul>
                 </div>           
             </nav>            
         </header>
 
-        <div class='banner'>            
+        <div class="banner">            
             <picture>
-                <source src='_img/banner-desktop.jpg' media='(max-width: 1001px)'>
-                <img src='_img/banner-desktop.jpg' alt='banner' class='img-responsive'>
+                <source src="_img/banner-desktop.jpg" media="(max-width: 1001px)">
+                <img src="_img/banner-desktop.jpg" alt="banner" class="img-responsivo">
             </picture>               
         </div>
-                        
-        <section class='sessao-principal-servicos conteiner'>   
-            <div class='cards-conteiner'>
-                <figure class="card-item">
-                    <img src='_img/p-web.jpg' class='img-responsive'>
-                    <figcaption>
-                        <p><span class='titulo'>PROGRAMADOR WEB</span></p>
-                        <p>Programa, codifica e testa sistemas, sites e portais voltados para o ambiente da internet</p>
-                        <a href='#'>ler mais</a>
-                    </figcaption>
-                </figure>
+        
+        <div class="row conteiner">
+            <section class="sessao-principal">
+                <p><span class="titulo">MISSÃO</span></p>
+                <blockquote>
+                    Em ciências da computação; programador, desenvolvedor, codificador ou engenheiro de software é alguém que escreve, 
+                    desenvolve ou faz manutenção de software em um grande sistema ou alguém que desenvolve software para uso em computadores pessoais
+                </blockquote><br>                   
+                <blockquote>
+                    Hoje em dia é muito comum a função programador/analista. É até uma tendência, uma vez que os programadores 
+                    muitas vezes têm uma visão mais ampla da engenharia e arquitetura do software, e experiência com as diversas 
+                    formas de se elaborar um mesmo produto.
+                </blockquote>
+            </section>
+            <hr>
+            <section class="sessao-principal">   
+                <div class="cards-conteiner">
+                    <figure class="card-item">
+                        <img src="_img/p-web.jpg" class="img-responsivo">
+                        <figcaption>
+                            <p><span class="titulo">PROGRAMADOR WEB</span></p>
+                            <p>Programa, codifica e testa sistemas, sites e portais voltados para o ambiente da internet</p>
+                            <a href="#">ler mais</a>
+                        </figcaption>
+                    </figure>
+                    
+                    <figure class="card-item">
+                        <img src="_img/p-desktop.jpg" class="img-responsivo">
+                        <figcaption>
+                            <p><span class="titulo">PROGRAMADOR DESKTOP</span></p>
+                            <P>tem o objetivo de criar aplicações executáveis no computador.</P>
+                            <a href="#">ler mais</a>
+                        </figcaption>
+                    </figure>
 
-                <figure class='card-item'>
-                    <img src='_img/p-desktop.jpg' class='img-responsive'>
-                    <figcaption>
-                        <p><span class='titulo'>PROGRAMADOR DESKTOP</span></p>
-                        <P>tem o objetivo de criar aplicações executáveis no computador.</P>
-                        <a href='#'>ler mais</a>
-                    </figcaption>
-                </figure>
-
-                <figure class='card-item'>
-                    <img src='_img/p-mobile.jpg' class='img-responsive'>
-                    <figcaption>
-                        <p><span class='titulo'>PROGRAMADOR MOBILE</span></p>
-                        <p>Programa, codifica e testa nas plataformas Android e/ou iOS. Executa a manutenção dos sistemas, 
-                           fazendo eventuais correções necessárias, visando atender às necessidades dos usuários</p>
-                        <a href='#'>ler mais</a>
-                    </figcaption>
-                </figure>
-            </div>
-        </section>
+                    <figure class="card-item">
+                        <img src="_img/p-mobile.jpg" class="img-responsivo">
+                        <figcaption>
+                            <p><span class="titulo">PROGRAMADOR MOBILE</span></p>
+                            <p>Programa, codifica e testa nas plataformas Android e/ou iOS. Executa a manutenção dos sistemas, 
+                            fazendo eventuais correções necessárias, visando atender às necessidades dos usuários</p>
+                            <a href="#">ler mais</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>            
+        </div>
+        
 
         <footer>
             <p>HTML5 CSS3</p> 
             <p>Teste feito por:</br>Levi Alves</p>   
-            <ul class='sub-menu'>
-                <li><a href='index.html'>HOME</a></li>
-                <li><a href='servicos.html'>SERVIÇOS</a></li>
-                <li><a href='quem-somos.html'>QUEM SOMOS</a></li>
-                <li><a href='contato.html'>CONTATO</a></li>
+            <ul class="sub-menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="servicos.html">SERVIÇOS</a></li>
+                <li><a href="quem-somos.html">QUEM SOMOS</a></li>
+                <li><a href="contato.html">CONTATO</a></li>
             </ul>                        
         </footer>
     </body>

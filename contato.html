@@ -1,58 +1,74 @@
 <!DOCTYPE html>
-<hmtl lang='pt-br'>
+<hmtl lang="pt-br">
     <head>
-        <meta charset='utf-8'>
-        <meta name='author' content='levi'>
-        <meta name='description' content='teste'>
-        <meta name='robots' content='index, nofollow'>
-        <meta name='viewport' content='width=device-width, initial scale=1.0'>
-        <meta http-equiv='X-UA-Compatible' content='ei=edge'>
+        <meta charset="utf-8">
+        <meta name="author" content="levi">
+        <meta name="description" content="teste">
+        <meta name="robots" content="index, nofollow">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title> teste </title>
-        <link rel='stylesheet' type='text/css' href='_css/estilo.css'>
-        <link rel='stylesheet' type='text/css' href='_css/menu.css'>
+        <link rel="stylesheet" type="text/css" href="_css/contato.css">
+        <link rel="stylesheet" type="text/css" href="_css/estilo.css">
+        <link rel="stylesheet" type="text/css" href="_css/menu.css">
     </head>
     <body>
         <header>
             <nav>
-                <div class='menu-wrapper'>
+                <div class="menu-wrapper">
                     <!-- menu desktop -->
-                    <ul class='menu-desktop'>
-                        <li><a href='index.html'>HOME</a></li>
-                        <li><a href='servicos.html'>SERVIÇOS</a></li>
-                        <li><a href='quem-somos.html'>QUEM SOMOS</a></li>
-                        <li><a href='contato.html'>CONTATO</a></li>
+                    <ul class="menu-desktop">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="servicos.html">SERVIÇOS</a></li>
+                        <li><a href="quem-somos.html">QUEM SOMOS</a></li>
+                        <li><a href="contato.html">CONTATO</a></li>
                     </ul>
                     <!-- menu aparelhos moveis-->
-                    <label class='lbl-menu' for='check'>&#8801;</label>
-                    <input type='checkbox' id='check'> 
-                    <ul class='menu-movel'>
-                        <li><a href='index.html'>HOME</a></li>
-                        <li><a href='servicos.html'>SERVIÇOS</a></li>
-                        <li><a href='quem-somos.html'>QUEM SOMOS</a></li>
-                        <li><a href='contato.html'>CONTATO</a></li>
+                    <label class="lbl-menu" for="check">&#8801;</label>
+                    <input type="checkbox" id="check"> 
+                    <ul class="menu-movel">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="servicos.html">SERVIÇOS</a></li>
+                        <li><a href="quem-somos.html">QUEM SOMOS</a></li>
+                        <li><a href="contato.html">CONTATO</a></li>
                     </ul>
                 </div>           
             </nav>            
         </header>
 
-        <div class='banner'>            
+        <div class="banner">            
             <picture>
-                <source src='_img/banner-desktop.jpg' media='(max-width: 1001px)'>
-                <img src='_img/banner-desktop.jpg' alt='banner' class='img-responsive'>
+                <source src="_img/banner-desktop.jpg" media="(max-width: 1001px)">
+                <img src="_img/banner-desktop.jpg" alt="banner" class="img-responsivo">
             </picture>               
         </div>
 
-        <section class='sessao-principal-contato conteiner'>
-            TESTE
-        </section>
+        <div class="row conteiner">
+            <section class="sessao-principal">
+               <form action="" method="post">
+                    <fieldset>
+                        <legend><pan class="titulo">Dados Pessoais</pan></legend>
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" class="campo" required autofocus><br><br>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" class="campo" required><br><br>
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" name="telefone" id="telefone" class="campo" required><br><br>
+                        <button type="submit" class="btn">Enviar</button>
+                        <button type="reset" class="btn">Limpar</button>                        
+                    </fieldset> 
+               </form>
+            </section>
+        </div>
+            
         <footer>
             <p>HTML5 CSS3</p> 
             <p>Teste feito por:</br>Levi Alves</p>   
-            <ul class='sub-menu'>
-                <li><a href='index.html'>HOME</a></li>
-                <li><a href='servicos.html'>SERVIÇOS</a></li>
-                <li><a href='quem-somos.html'>QUEM SOMOS</a></li>
-                <li><a href='contato.html'>CONTATO</a></li>
+            <ul class="sub-menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="servicos.html">SERVIÇOS</a></li>
+                <li><a href="quem-somos.html">QUEM SOMOS</a></li>
+                <li><a href="contato.html">CONTATO</a></li>
             </ul>                        
         </footer>
     </body>
