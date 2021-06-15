@@ -1,16 +1,15 @@
-<!DOCTYPE html>
-<hmtl lang="pt-br">
+<!DOCTYPE HTML>
+<html lang="pt-br">
     <head>
         <meta charset="utf-8">
-        <meta name="author" content="levi">
-        <meta name="description" content="teste">
+        <meta name="author" content="Levi Alves Junior">
+        <meta name="description" content="programação">
         <meta name="robots" content="index, nofollow">
-        <meta name="viewport" content="width=device-width, initial scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ei=edge">
-        <title> teste </title>
-        <link rel="stylesheet" type="text/css" href="_css/estilo.css">
-        <link rel="stylesheet" type="text/css" href="_css/menu.css">
-        <link rel="stylesheet" type="text/css" href="_css/servicos.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Serviços - Home</title>
+        <link rel="shortcut icon" type="imagem/png" href="icon/programming.png">
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
     </head>
     <body>
         <header>
@@ -38,14 +37,15 @@
 
         <div class="banner">            
             <picture>
-                <source src="_img/banner-desktop.jpg" media="(max-width: 1001px)">
-                <img src="_img/banner-desktop.jpg" alt="banner" class="img-responsivo">
+                <source src="img/banner-desktop.jpg" media="(max-width: 1001px)">
+                <img src="img/banner-desktop.jpg" alt="banner" class="img-responsivo">
             </picture>               
         </div>
         
-        <div class="row conteiner">
-            <section class="sessao-principal">
-                <p><span class="titulo">MISSÃO</span></p>
+        <main>
+            <div class="margin-top-extra"></div>
+            <section class="sessao-principal conteiner">
+                <p><span class="titulo">MISSÃO:</span></p><br>
                 <blockquote>
                     Em ciências da computação; programador, desenvolvedor, codificador ou engenheiro de software é alguém que escreve, 
                     desenvolve ou faz manutenção de software em um grande sistema ou alguém que desenvolve software para uso em computadores pessoais
@@ -56,11 +56,11 @@
                     formas de se elaborar um mesmo produto.
                 </blockquote>
             </section>
-            <hr>
-            <section class="sessao-principal">   
+            <hr class="conteiner">
+            <section class="sessao-principal conteiner">   
                 <div class="cards-conteiner">
                     <figure class="card-item">
-                        <img src="_img/p-web.jpg" class="img-responsivo">
+                        <img src="img/p-web.jpg" class="img-responsivo">
                         <figcaption>
                             <p><span class="titulo">PROGRAMADOR WEB</span></p>
                             <p>Programa, codifica e testa sistemas, sites e portais voltados para o ambiente da internet</p>
@@ -69,7 +69,7 @@
                     </figure>
                     
                     <figure class="card-item">
-                        <img src="_img/p-desktop.jpg" class="img-responsivo">
+                        <img src="img/p-desktop.jpg" class="img-responsivo">
                         <figcaption>
                             <p><span class="titulo">PROGRAMADOR DESKTOP</span></p>
                             <P>tem o objetivo de criar aplicações executáveis no computador.</P>
@@ -78,7 +78,7 @@
                     </figure>
 
                     <figure class="card-item">
-                        <img src="_img/p-mobile.jpg" class="img-responsivo">
+                        <img src="img/p-mobile.jpg" class="img-responsivo">
                         <figcaption>
                             <p><span class="titulo">PROGRAMADOR MOBILE</span></p>
                             <p>Programa, codifica e testa nas plataformas Android e/ou iOS. Executa a manutenção dos sistemas, 
@@ -87,19 +87,27 @@
                         </figcaption>
                     </figure>
                 </div>
-            </section>            
-        </div>
-        
+            </section>  
+            <div class="margin-top-extra"></div>          
+        </main>
 
         <footer>
-            <p>HTML5 CSS3</p> 
-            <p>Teste feito por:</br>Levi Alves</p>   
-            <ul class="sub-menu">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="servicos.html">SERVIÇOS</a></li>
-                <li><a href="quem-somos.html">QUEM SOMOS</a></li>
-                <li><a href="contato.html">CONTATO</a></li>
-            </ul>                        
+            <div class="footer-wrapper">
+                <div class="footer-item">
+                    <p><span class="titulo">HTML5 CSS3</span><br>Levi Alves Junior<br>Copyright &copy; 2021 - Todos os Direitos Reservados</p> 
+                </div>
+                <div class="footer-item">
+                    <p><span class="titulo">Programação:</span><br>WEB<br>DESKTOP<br>MOBILE</p>
+                </div>
+                <div class="footer-item">
+                    <ul class="menu-footer">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="servicos.html">SERVIÇOS</a></li>
+                        <li><a href="quem-somos.html">QUEM SOMOS</a></li>
+                        <li><a href="contato.html">CONTATO</a></li>
+                    </ul>                   
+                </div>
+            </div>
         </footer>
     </body>
 </hmtl>

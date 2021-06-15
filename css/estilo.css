@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+:root{
+    --corPadrao: #363636;
+    --corFundo: #696969; 
+    --corCardFundo: #fff;
+    --corPalavra: #fff;    
+    --corPalavra2: #000000;
+    --corPalavraMenu: #fff;
+    --corBotao: #000000;
+}
+
+body{
+     background-color:  var(--corFundo);
+}
+
+p, blockquote{
+    color: var(--corPalavra);
+}
+
+.titulo{
+    font-size: 30px;
+}
+
+.margin-top-extra{
+    margin-top: 80px;
+}
+
+.conteiner{
+    width: 80%;
+    margin: auto;
+}
+@media only screen and (max-width: 1000px){
+    .conteiner{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 500px){
+    .conteiner{
+        width: 95%;
+    }
+}
+
+.img-responsivo{    
+    max-width: 100%;
+    height: auto;   
+}
+
+/*===============================*/
+/*      MENU                     */
+/*===============================*/
+nav{
+    width: 100%;
+    background-color: var(--corPadrao);
+    height: 50px;
+    line-height: 50px; 
+    position: relative;
+}
+
+/*===============================*/
+/*      MENU DESKTOP             */
+/*===============================*/
+ul.menu-desktop{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+}
+ul.menu-desktop li{    
+    text-align: center;
+}
+ul.menu-desktop li a{
+    height: 50px;/* height: 50px; do contrario "a" fica fora do nav (fica visivel se aumentar o border do hover)*/
+    text-decoration: none;
+    color: var(--corPalavraMenu);
+    display: block;
+    padding: 0 25px 0;     
+}
+ul.menu-desktop li a:hover{
+    background-color: rgba(0,0,0,0.1);
+    border-bottom: 2px solid var(--corPalavraMenu); /*#860606;*/
+}
+
+/*===============================*/
+/*      MENU MOVEL               */
+/*===============================*/
+ul.menu-movel, .lbl-menu, #check{
+    display: none;
+}
+.lbl-menu{
+    width: 50px;  
+    font-size: 40px;
+    color: var(--corPalavraMenu);
+    padding-left: 15px; 
+    cursor: pointer;
+}
+ul.menu-movel{
+    width: 200px;
+    list-style-type: none;
+    height: 50px;
+    line-height: 50px;
+    margin-top: -300px;
+}
+ul.menu-movel li{
+    background-color: var(--corPadrao);
+    text-align: left;    
+}
+ul.menu-movel li a{
+    padding-left: 15px;
+    display: block;
+    text-decoration: none;
+    color: var(--corPalavraMenu);
+}
+ul.menu-movel li a:hover{
+    background-color: rgba(0,0,0,0.1);
+    border-right: 2px solid var(--corPalavraMenu); /*#860606;*/
+}
+#check:checked ~ ul.menu-movel{
+    margin-top: 0;
+}
+@media only screen and (max-width: 1000px){
+    ul.menu-desktop{
+        display: none;
+    }
+    .lbl-menu,ul.menu-movel{
+        display: block;
+    }
+}
+
+/*====================================================================================*/
+/*              GERAL                                                                 */
+/*====================================================================================*/
+.banner{
+    height: 100;
+    width: 100%;
+}
+
+.sessao-principal{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    padding: 20px;
+    background-color: var(--corPadrao);      
+}
+
+footer{
+    height: auto;
+    width: 100%;
+    padding-top: 50px;
+    background-color: var(--corPadrao);
+}
+.footer-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+footer .footer-item{
+    width: 20%;
+    margin: 20px 0;
+}
+@media only screen and (max-width: 1000px){
+    footer .footer-item{
+        width: 49%;
+    }
+}
+@media only screen and (max-width: 500px){
+    footer .footer-item{
+        width:100%;
+    }
+}
+footer .footer-item ul.menu-footer{
+    list-style-type: none;
+}
+footer .footer-item ul.menu-footer li a{
+    color: #fff;
+    text-decoration: none;
+}
+footer .footer-item ul.menu-footer li a:hover{
+    color: #000000; /*#860606;*/
+}
+
+/*====================================================================================*/
+/*                                    INDEX                                           */
+/*====================================================================================*/
+.flex-wrap-around{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.sessao-principal article{
+    width: 24%;
+    height: auto;
+    background-color: var(--corFundo);
+    margin-bottom: 10px;
+    border: 2px solid #000000;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 1000px){
+    .sessao-principal article{
+        width: 49%;
+    }
+}
+@media only screen and (max-width: 500px){
+    .sessao-principal{
+        flex-direction: column;
+    }
+    .sessao-principal article{
+        width: 100%;
+    }
+}
+
+/*====================================================================================*/
+/*                              QUEM-SOMOS                                            */
+/*====================================================================================*/
+.pessoas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.pessoas .pessoa{
+    width: 24%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.circulo{
+    border: 3px solid var(--corPalavra);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;                                                       
+}
+@media only screen and (max-width: 1000px){
+    .pessoas .pessoa{
+        width: 45%;
+    }
+}
+@media only screen and (max-width: 500px){
+    .pessoas{
+        flex-direction: column;
+    }
+    .pessoas .pessoa{
+        margin: auto;
+        margin-bottom: 30px;
+        width: 80%;
+    }
+}
+
+.video-pc{
+    position: relative;
+    padding-bottom: 50.25%;
+}
+.video-pc video{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+/*====================================================================================*/
+/*                              CONTATO                                               */
+/*====================================================================================*/
+fieldset{
+    padding: 20px;
+    border: 2px solid var(--corFundo);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+}
+fieldset legend{
+    color: var(--corPalavra);
+    border: 2px solid var(--corFundo);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    padding: 0 20px 0 
+}
+fieldset label{
+    color: var(--corPalavra);
+}
+
+.campo{
+    width: 100%;
+    height: 30px;
+}
+
+.btn{
+    color: var(--corPalavra);
+    background-color: var(--corBotao);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    padding: 5px 20px 5px;
+    cursor: pointer;
+}
+
+/*====================================================================================*/
+/*                              SERVIÇO                                               */
+/*====================================================================================*/
+.cards-conteiner{          
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cards-conteiner figure.card-item{
+    width: 32%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: var(--corCardFundo);    
+}
+.cards-conteiner figure.card-item figcaption {
+    text-align: center;
+}
+.cards-conteiner figure.card-item figcaption p{
+    color: var(--corPalavra2);
+}
+.cards-conteiner figure.card-item figcaption a{
+    text-decoration: none;
+    color: #ff0000;
+}
+.cards-conteiner figure.card-item figcaption p span.titulo{
+    font-size: 1.5em;
+}
+.cards-conteiner figure.card-item:hover{
+    box-shadow: 3px 3px 20px #969696; 
+}
+
+@media only screen and (max-width: 1000px){
+    .cards-conteiner figure.card-item{
+        width: 49%;
+    }
+}
+@media only screen and (max-width: 500px){
+    .cards-conteiner{
+        flex-direction: column;
+    }
+    .cards-conteiner figure.card-item{
+        width: 100%;
+    }
+}
