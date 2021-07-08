@@ -60,7 +60,9 @@ nav{
     background-color: var(--corPadrao);
     height: 50px;
     line-height: 50px; 
-    position: relative;
+    position: fixed;
+    top: 0;    
+    border-bottom: 2px solid #000000;
 }
 
 /*===============================*/
@@ -102,9 +104,11 @@ ul.menu-movel, .lbl-menu, #check{
 ul.menu-movel{
     width: 200px;
     list-style-type: none;
-    height: 50px;
     line-height: 50px;
-    margin-top: -300px;
+    height: 900px;
+    margin-top: -1000px;
+    background-color: var(--corPadrao);
+    border-right: 2px solid #000000;
 }
 ul.menu-movel li{
     background-color: var(--corPadrao);
@@ -136,6 +140,7 @@ ul.menu-movel li a:hover{
 /*              GERAL                                                                 */
 /*====================================================================================*/
 .banner{
+    margin-top: 50px;
     height: 100;
     width: 100%;
 }
