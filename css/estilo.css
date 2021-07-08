@@ -5,7 +5,6 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
-
 :root{
     --corPadrao: #363636;
     --corFundo: #696969; 
